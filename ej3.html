@@ -1,41 +1,164 @@
 <html> 
   <head> 
-    <title>Prueba de Bootstrap</title> 
+    <title>Ejercicio3</title> 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   </head> 
   <body>
     <div class="container">
-      <div id="Acordeon1">
-
+      <div id="accordion1">
         <div class="card">
           <div class="card-header" id="cabecera1">
             <h5 class="mb-0">
-              <button class="btn btn-link" data-toggle="collapse" data-target="#respuesta1" aria-expanded="true" aria-controls="respuesta1">
-                Pregunta frecuente 1
+              <button class="btn btn-link" data-toggle="collapse" data-target="#sevilla" aria-expanded="true" aria-controls="sevilla">
+                Sevilla
               </button>
             </h5>
           </div>
-          <div id="respuesta1" class="collapse show" aria-labelledby="cabecera1" data-parent="#Acordeon1">
-            <div class="card-body">asdjbdjvdwjandwjajksdndjkb</div>
+          <div id="sevilla" class="collapse show" aria-labelledby="cabecera1" data-parent="#accordion1">
+            <div class="card-body">
+              <ul>
+                <li>Albaida del Aljarafe	2.898 habitantes</li>
+                <li>Alcalá de Guadaíra	71.740 habitantes</li>
+                <li>Alcalá del Río	11.004 habitantes</li>
+              </ul>
+              <a href="https://www.sevilla.org/">Web oficial</a>
+            </div>
           </div>
         </div>
+
         <div class="card">
           <div class="card-header" id="cabecera2">
             <h5 class="mb-0">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#respuesta2" aria-expanded="false" aria-controls="respuesta2">
-                Pregunta frecuente 2
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#cadiz" aria-expanded="false" aria-controls="cadiz">
+                Cádiz
               </button>
             </h5>
           </div>
-          <div id="respuesta2" class="collapse" aria-labelledby="cabecera2" data-parent="#Acordeon1">
-            <div class="card-body">asdjbdjvdwjandwjajksdndjkb</div>
+          <div id="cadiz" class="collapse" aria-labelledby="cabecera2" data-parent="#accordion1">
+            <div class="card-body">
+              <div class="card-body">
+                <ul>
+                  <li>Algar	1.478 habitantes</li>
+                  <li>Zahara de la Sierra	1.511 habitantes</li>
+                  <li>El Gastor	2.015 habitantes</li>
+                </ul>
+                <a href="https://www.cadiz.org/">Web oficial</a>
+              </div>
+            </div>
           </div>
         </div>
 
+        <div class="card">
+          <div class="card-header" id="cabecera3">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#granada" aria-expanded="false" aria-controls="granada">
+                Granada
+              </button>
+            </h5>
+          </div>
+          <div id="granada" class="collapse" aria-labelledby="cabecera3" data-parent="#accordion1">
+            <div class="card-body">
+              <div class="card-body">
+                <ul>
+                  <li>Granada	23.2770 habitantes</li>
+                  <li>Motril	60.420 habitantes</li>
+                  <li>Almuñécar	27.135 habitantes</li>
+                </ul>
+                <a href="https://www.granada.org/">Web oficial</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="cabecera4">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#jaen" aria-expanded="false" aria-controls="jaen">
+                Jaén
+              </button>
+            </h5>
+          </div>
+          <div id="jaen" class="collapse" aria-labelledby="cabecera4" data-parent="#accordion1">
+            <div class="card-body">
+              <div class="card-body">
+                <ul>
+                  <li>Jaén	114.658 habitantes</li>
+                  <li>Linares	58.829	71.740 habitantes</li>
+                  <li>Andújar	37.975	11.004 habitantes</li>
+                </ul>
+                <a href="https://www.dipujaen.es/">Web oficial</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
       </div>
-    </div>
+      <!--       dropdown     -->
+
+      <div class="row mt-5">
+        <div class="col-sm ">
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle bg-success" type="button" data-toggle="dropdown">
+              Sevilla
+            </button>
+            <div class="dropdown-menu">
+              <ul>
+                <li>Albaida del Aljarafe	2.898 habitantes</li>
+                <li>Alcalá de Guadaíra	71.740 habitantes</li>
+                <li>Alcalá del Río	11.004 habitantes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle bg-success" type="button" data-toggle="dropdown">
+              Cádiz
+            </button>
+            <div class="dropdown-menu">
+              <ul>
+                <li>Algar	1.478 habitantes</li>
+                <li>Zahara de la Sierra	1.511 habitantes</li>
+                <li>El Gastor	2.015 habitantes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle bg-success" type="button" data-toggle="dropdown">
+              Granada
+            </button>
+            <div class="dropdown-menu">
+              <ul>
+                <li>Granada	23.2770 habitantes</li>
+                <li>Motril	60.420 habitantes</li>
+                <li>Almuñécar	27.135 habitantes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle bg-success" type="button" data-toggle="dropdown">
+              Jaén
+            </button>
+            <div class="dropdown-menu">
+              <ul>
+                <li>Jaén	114.658 habitantes</li>
+                <li>Linares	58.829	71.740 habitantes</li>
+                <li>Andújar	37.975	11.004 habitantes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+
   </body>
 </html>
